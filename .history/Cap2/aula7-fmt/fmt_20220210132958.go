@@ -7,12 +7,11 @@ import "fmt"
 func main() {
 
 	x := "oi"
-	y := " bom dia"
+	y := "bom dia"
 
-	z := fmt.Sprint(x, y)
+	Z := 
 
 	fmt.Println(x)
 	fmt.Println(y)
-	fmt.Println(z)
 
 }
