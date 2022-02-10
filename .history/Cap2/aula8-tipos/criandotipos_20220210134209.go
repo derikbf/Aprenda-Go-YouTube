@@ -12,4 +12,5 @@ func main() {
 	fmt.Printf("%T\n", x)
 	fmt.Printf("%v\n", b)
 
+	b = 
 }

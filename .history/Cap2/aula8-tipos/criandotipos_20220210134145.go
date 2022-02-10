@@ -4,12 +4,11 @@ import "fmt"
 
 type hotdog int 
 
-var b hotdog = 10
+var b hotdog = 
 
 func main() {
 
 	x := 10
 	fmt.Printf("%T\n", x)
-	fmt.Printf("%v\n", b)
-
+	fmt.Printf("%T", b)
 }
