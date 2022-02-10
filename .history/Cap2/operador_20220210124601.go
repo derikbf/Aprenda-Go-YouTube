@@ -5,7 +5,7 @@ import "fmt"
 var y = "Boa noite"
 
 func main() {
-	x :=  10.0
+	x :=  10  10
 	// y := "olá bom dia"
 	// x := true
 
