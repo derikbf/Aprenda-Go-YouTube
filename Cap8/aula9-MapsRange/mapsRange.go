@@ -19,4 +19,8 @@ func main() {
 		total += key
 	}
 	fmt.Println(total)
+
+	delete(qualquercoisa, 123)
+
+	fmt.Println(qualquercoisa)
 }
