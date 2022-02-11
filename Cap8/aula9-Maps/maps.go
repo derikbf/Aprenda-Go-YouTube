@@ -19,7 +19,9 @@ func main() {
 
 	fmt.Println(amigos["romário"])
 
-	sera, ok := amigos["fantasma"]
-
-	fmt.Println(sera, ok)
+	if sera, ok := amigos["fantasma"]; !ok {
+		fmt.Println("Não tem!")
+	} else {
+		fmt.Println(sera, ok)
+	}
 }
