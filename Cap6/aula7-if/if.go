@@ -4,9 +4,12 @@ import "fmt"
 
 func main() {
 
-	x := 10
-	if !(x < 15) {
-		fmt.Println("Hello")
+	if x := 15;
+	x > 100 {
+		fmt.Println("chis é maior que cem")
+	} else if x < 10 {
+		fmt.Println("chis é menor que déis")
+	}	else {
+		fmt.Println("chis não é menor que déis nem maior que cem")
 	}
-
 }
