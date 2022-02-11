@@ -10,4 +10,6 @@ func main() {
 		{7, 8, 9},
 	}
 	fmt.Println(ss)
+	fmt.Println(ss[0][2])
+
 }
