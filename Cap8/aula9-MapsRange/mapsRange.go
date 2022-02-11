@@ -13,7 +13,10 @@ func main() {
 
 	fmt.Println(qualquercoisa, "\n")
 
-	for key, value := range qualquercoisa {
-		fmt.Println(key, value)
+	total := 0
+
+	for key, _ := range qualquercoisa {
+		total += key
 	}
+	fmt.Println(total)
 }
