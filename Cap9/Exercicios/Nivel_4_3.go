@@ -11,7 +11,7 @@ func main() {
 	fmt.Println(slice[0:3])
 	fmt.Println(slice[4:])
 	fmt.Println(slice[1:7])
-	fmt.Println(slice[3:9])
+	fmt.Println(slice[2:9])
 	
 
 }
