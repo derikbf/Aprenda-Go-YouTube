@@ -19,4 +19,13 @@ func main() {
 		default:
 			fmt.Println("o escritório tá vazio")
 	}
+
+	quemtanafirma := "zezinho"
+
+	switch quemtanafirma {
+		case "zezinho", "maria":
+			fmt.Println("hoje quem tá na firma é o time 1")
+		case "joana", "pedinho":
+			fmt.Println("hoje quem tá na firma é o time 2")
+	}
 }
