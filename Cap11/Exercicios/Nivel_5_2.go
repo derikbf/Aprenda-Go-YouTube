@@ -2,25 +2,35 @@ package main
 
 import "fmt"
 
-type pessoa struct {
-	nome string
-	sobrenome string
-	sabores []string
+type veiculo struct {
+	portas int
+	cor string
+}
+
+type caminhonete struct {
+	veiculo
+	tracaoNasQuatros bool
+}
+
+type sedan struct {
+	veiculo
+	modeloLuxo bool
 }
 
 func main() {
 
-	meumapa := make(map[string]pessoa)
+		carraoDoTio := sedan{veiculo{4, "abobora"}, true}
+		fubicaDoVô := caminhonete{
+			veiculo: veiculo{
+				portas: 8,
+				cor: "ferrugagem",
+			},
+			tracaoNasQuatros: false,
+		}
 
-	meumapa["Pimentão"] = pessoa {
-		nome: "Renata",
-		sobrenome: "Pimentel",
-		sabores: []string{"pistache", "morango", "baunilha"}}
+		fmt.Println(carraoDoTio)
+		fmt.Println(fubicaDoVô)
 
-	meumapa["da prucia"] = pessoa {"Frederico", "da prucia", 
-		[]string{"sabao em pó", "chocolate", "agua salgada"}}
-	
-	for _, v := range meumapa {
-		fmt.Println(v)
-	}
+		fmt.Println(carraoDoTio.portas)
+		fmt.Println(fubicaDoVô.cor)
 }
