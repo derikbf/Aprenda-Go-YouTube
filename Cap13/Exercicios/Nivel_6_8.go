@@ -5,7 +5,6 @@ import "fmt"
 func main() {
 
 	x := retornaumafuncao()
-	
 	x()
 	
 }
