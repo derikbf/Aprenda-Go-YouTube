@@ -23,7 +23,6 @@ func mudeMe (p *pessoa) {
 	p.sobrenome = "Primodozezinho"
 }
 
-
 // Crie um struct "pessoa"
 // Crie uma função chamada mudeMe que tenha *pessoa como parâmetro. 
 // Essa função deve mudar um valor armazenado no endereço *pessoa.
