@@ -14,3 +14,5 @@ func essavaireceberaoutrafuncao(x func ()) {
 	fmt.Println("Prestenção: ")
 	x()
 }
+
+// Callback: passe uma função como argumento a outra função.
