@@ -15,7 +15,7 @@ func main() {
 	fmt.Println(*&x) // quase não é usado
 	fmt.Printf("%T, %T\n", x, y)
 	fmt.Print("---\n")
-	fmt.Print(x, y)
+	fmt.Print(x, y) 
 }
 
 
