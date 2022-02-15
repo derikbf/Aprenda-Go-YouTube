@@ -8,3 +8,5 @@ func main() {
 		fmt.Println("Hello, playgound")
 	}()
 }
+
+// - Crie e utilize uma função anônima.
