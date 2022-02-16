@@ -53,9 +53,12 @@ func main() {
 
 	// your code goes here
 
-	schema := json.NewEncoder(os.Stdout)
+	err := json.NewEncoder(os.Stdout).Encode(users)
 
-	err := schema.Encode(users)
 	if err != nil { fmt.Println("Deu ruim aqui", err)}
 
 }
+
+// - Partindo do código abaixo, utilize NewEncoder() e Encode() para enviar as informações como JSON para Stdout.
+//     - https://play.golang.org/p/BVRZTdlUZ_
+// - Desafio: descubra o que é, e utilize, method chaining para conectar os dois métodos acima.
