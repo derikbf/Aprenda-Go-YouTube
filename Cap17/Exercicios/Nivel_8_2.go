@@ -22,7 +22,13 @@ func main() {
 	err := json.Unmarshal([]byte(s), &resultado)
 	if err != nil { fmt.Println("Deu ruim", err) }
 	
+	fmt.Println(" -- ")
 	fmt.Println(resultado)
+	fmt.Println("\nResultado 1")
+	fmt.Println(resultado[1])
 
+
+
+	
 	
 }
