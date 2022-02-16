@@ -27,8 +27,5 @@ func main() {
 	fmt.Println("\nResultado 1")
 	fmt.Println(resultado[1])
 
-
-
-	
 	
 }
