@@ -6,10 +6,8 @@ func main() {
 	c := make(chan int)
 
 	go meuloop(10, c)
+	prints(c)
 
-	for v := range c {
-		fmt.Println("Recebido do canal:", v)
-	}
 }
 
 func meuloop (t int, s chan<- int) {
@@ -17,4 +15,10 @@ func meuloop (t int, s chan<- int) {
 		s <- i
 	}
 	close(s)
+}
+
+func prints(r <-chan int) {
+	for v := range c {
+		fmt.Println("Recebido do canal:", v)
+	}
 }
