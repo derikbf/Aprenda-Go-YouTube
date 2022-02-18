@@ -1,8 +1,8 @@
 package main
 
 import (
+	"Aprenda-Go-YouTube/Cap19/aula8-Pacotes/pkg2"
 	"fmt"
-	"std/Aprenda-Go-YouTube/Cap19/aula8-Pacotes/pkg2"
 )
 
 func main() {
