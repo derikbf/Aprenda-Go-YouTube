@@ -23,9 +23,9 @@ func criarGoroutines (i int) {
 	for j := 0; j < i; j++ {
 		go func() {
 			atomic.AddInt32(&contador, 1)
-			runtime.Gosched()
-			atomic.LoadInt32(&contador)
-			fmt.Println(contador)
+			v := atomic.LoadInt32(&contador)
+			runtime.Gosched() // entrega threads pros outros
+			fmt.Println(v)
 			wg.Done()
 		}()
 	}
