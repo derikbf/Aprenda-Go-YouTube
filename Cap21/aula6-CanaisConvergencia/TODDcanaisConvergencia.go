@@ -39,7 +39,7 @@ func recebe(p, i, c chan int) {
 		for v := range p {
 			c <- v
 		}
-		wg.Done()
+		wg.Done() 
 	}()
 	wg.Add(1)
 	go func() {

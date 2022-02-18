@@ -22,7 +22,7 @@ func trabalho(s string) chan string {
 			time.Sleep(time.Millisecond * time.Duration(rand.Intn(1e3)))
 		}
 	}(s, canal)
-	return canal
+	return canal 
 }
 
 func converge(x, y chan string) chan string {
