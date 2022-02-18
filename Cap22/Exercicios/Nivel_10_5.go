@@ -5,27 +5,17 @@ import (
 )
 
 func main() {
-	c := gen()
-	receive(c)
-
-	fmt.Println("about to exit")
-}
-
-func gen() <-chan int {
 	c := make(chan int)
+
 	go func() {
-		for i := 0; i < 100; i++ {
-			c <- i
-		}
-		close(c)
+		c <- 42
 	}()
-	return c
-}
 
-func receive(canal <-chan int) {
-	for v := range canal {
-		fmt.Println(v)
-	}
-}
+	v, ok := <-c
+	fmt.Println(v, ok)
 
-// use um for range loop para demonstrar os valores do canal.
+	close(c)
+
+	v, ok = <-c
+	fmt.Println(v, ok)
+}
