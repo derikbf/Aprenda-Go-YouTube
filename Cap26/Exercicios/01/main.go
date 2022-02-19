@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	fmt.Println(cachorro.Idade(10))
+	fmt.Println(cachorro.Idade(10)) 
 }
 
 // Crie um package "cachorro".
